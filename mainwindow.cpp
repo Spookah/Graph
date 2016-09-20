@@ -72,7 +72,7 @@ void MainWindow::setupQuadraticDemo(QCustomPlot *customPlot)
     for (int i=0; i<101; ++i)
     {
         x[i] = i/50.0 - 1; // x goes from -1 to 1
-        y[i] = 2*x[i]*x[i];  // let's plot a quadratic function
+        y[i] = x[i]*x[i];  // let's plot a quadratic function
     }
     // create graph and assign data to it:
     customPlot->addGraph();
